@@ -26,8 +26,11 @@ int count = 0;
 void tower_of_hanoi(int n, char from, char to, char aux)
 {  
     // base condition
-    if(n == 0)
+    if(n == 1)
+    {
+	printf("%c to %c\n",from,to);
 	return ;
+    }
     // to move disk from source to helper rod 
     tower_of_hanoi(n-1, from, aux , to);
     count++;
