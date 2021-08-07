@@ -29,6 +29,7 @@ void tower_of_hanoi(int n, char from, char to, char aux)
     if(n == 1)
     {
 	printf("%c to %c\n",from,to);
+	count++;
 	return ;
     }
     // to move disk from source to helper rod 
